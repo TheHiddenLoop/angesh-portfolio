@@ -4,15 +4,15 @@
 
 
 :root {
-  --primary-color: #3B82F6;
-  --secondary-color: #10B981;
-  --accent-color: #F59E0B;
-  --text-primary: #1F2937;
-  --text-secondary: #6B7280;
-  --bg-primary: #FFFFFF;
-  --bg-secondary: #F9FAFB;
-  --bg-glass: rgba(255, 255, 255, 0.1);
-  --border-glass: rgba(255, 255, 255, 0.2);
+  --primary-color: #FF7043; 
+  --secondary-color: #8D6E63; 
+  --accent-color: #607D8B; 
+  --text-primary: #2C2C2C;
+  --text-secondary: #585860;
+  --bg-primary: #FAFAFA;
+  --bg-secondary: #F5F5F5;
+  --bg-glass: rgba(255, 255, 255, 0.5);
+  --border-glass: rgba(255, 255, 255, 0.6);
   --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -20,10 +20,10 @@
 .dark {
   --text-primary: #F9FAFB;
   --text-secondary: #D1D5DB;
-  --bg-primary: #111827;
-  --bg-secondary: #1F2937;
-  --bg-glass: rgba(0, 0, 0, 0.2);
-  --border-glass: rgba(255, 255, 255, 0.1);
+  --bg-primary: #262626; 
+  --bg-secondary: #3B3B3B;
+  --bg-glass: rgba(0, 0, 0, 0.4);
+  --border-glass: rgba(255, 255, 255, 0.2);
   --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
 }
 

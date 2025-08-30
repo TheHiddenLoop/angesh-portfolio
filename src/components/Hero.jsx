@@ -30,7 +30,7 @@ export function Hero() {
             </p>
 
             <div className="hero-buttons flex justify-center md:justify-start gap-3 md:gap-4">
-              <button onClick={scrollToProjects} className="bg-primary text-white rounded-lg px-5 py-3 font-medium text-sm sm:text-base transition-skin hover:bg-[#2563EB] hover:-translate-y-0.5 hover:shadow-md inline-block cursor-pointer">
+              <button onClick={scrollToProjects} className="bg-primary text-white rounded-lg px-5 py-3 font-medium text-sm sm:text-base transition-skin hover:bg-secondary hover:-translate-y-0.5 hover:shadow-md inline-block cursor-pointer">
                 View My Project
               </button>
               <a

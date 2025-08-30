@@ -233,7 +233,7 @@ const Projects = () => {
                     <div className="hidden md:flex justify-center mt-8">
                         <CustomButton
                             onClick={loadMoreProjects}
-                            className="px-8 py-3 bg-[var(--bg-glass)] text-textPrimary border-2 border-[#3B82F6] rounded-md transition-all duration-300 hover:bg-[#3B82F6]"
+                            className="px-8 py-3 bg-[var(--bg-glass)] text-textPrimary border-2 border-primary rounded-md transition-all duration-300 hover:bg-primary"
                         >
                             View More Projects
                         </CustomButton>
