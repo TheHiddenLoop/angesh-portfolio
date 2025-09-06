@@ -1,64 +1,56 @@
-import me from "../asset/me2.jpeg"
+import React from "react";
 
 const About = () => {
-  const aboutSections = [
+  const sections = [
     {
       title: "Who I Am",
       content:
-        "I'm a passionate MERN stack developer with a strong focus on building scalable, efficient, and user-friendly applications. With expertise in modern JavaScript technologies and a problem-solving mindset, I love turning complex ideas into seamless digital experiences.",
+        "I'm a passionate MERN stack developer with a strong focus on building scalable, efficient, and user-friendly applications. I love turning complex ideas into seamless digital experiences.",
     },
     {
       title: "What I Do",
       content:
-        "I specialize in developing full-stack web applications using React, Node.js, Express.js, and MongoDB, along with MySQL for relational data needs. My work combines clean code practices with modern design principles to deliver responsive, secure, and high-performing applications.",
+        "I specialize in React, Node.js, Express.js, and MongoDB — creating full-stack applications with clean code, responsive UI, and secure backend systems.",
     },
     {
-      title: "What I Love Building",
+      title: "What I Love",
       content:
-        "From interactive dashboards to complete business solutions, I enjoy building applications that not only solve real-world problems but also deliver great user experiences. Every project is an opportunity to innovate, optimize, and push the boundaries of modern web development.",
+        "From interactive dashboards to business solutions, I enjoy solving real-world problems through technology while delivering exceptional user experiences.",
     },
-  ]
+  ];
 
   return (
-    <section id="about" className="bg-bgSecondary px-4 sm:px-10 md:px-[80px] py-0 relative">
+    <section
+      id="about"
+      className="bg-gradient-to-b from-bgSecondary to-bgSecondary/80 px-4 sm:px-10 md:px-[80px] py-0 relative"
+    >
       <div className="max-w-[1200px] mx-auto py-20 md:py-20 px-2 md:px-6">
-        <h2 className="text-2xl sm:text-3xl md:text-[2.5rem] font-bold text-center mb-10 md:mb-[60px] text-textPrimary fade-in tracking-tight text-balance">
-          About Me
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-textPrimary mb-6 tracking-tight">
+          About <span className="text-primary">Me</span>
         </h2>
+        <p className="text-base sm:text-lg text-textSecondary max-w-3xl mx-auto leading-relaxed mb-12 text-center">
+          Every project is an opportunity to innovate, optimize, and push the
+          boundaries of web development. Here's a little more about me:
+        </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-[2rem] md:gap-[4rem] items-center">
-          <div className="relative slide-in-left">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+          {sections.map((section, index) => (
             <div
-              className="relative overflow-hidden rounded-[20px] shadow-lg h-[600px] ring-1 ring-black/5 dark:ring-white/10
-                        before:content-[''] before:absolute before:inset-0 before:bg-black/5 before:z-10 before:pointer-events-none
-                        before:transition-opacity before:duration-300 hover:before:opacity-0"
+              key={index}
+              className="flex flex-col justify-between bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-2xl shadow-lg hover:shadow-xl hover:border-primary/40 hover:scale-105 transition-all duration-300"
             >
-              <img
-                src={me || "/placeholder.svg"}
-                alt="Angesh Chauhan working"
-                className="w-full h-full object-cover transition-transform duration-500 will-change-transform hover:scale-[1.03]"
-                loading="lazy"
-                decoding="async"
-              />
+              <h3 className="text-2xl font-semibold text-primary mb-4">
+                {section.title}
+              </h3>
+              <p className="text-textSecondary leading-relaxed text-[15px]">
+                {section.content}
+              </p>
             </div>
-          </div>
-
-          <div className="slide-in-right">
-            <div className="p-4 md:p-8">
-              {aboutSections.map((section, index) => (
-                <div key={index}>
-                  <h3 className="text-xl sm:text-2xl md:text-[1.5rem] font-semibold text-primary mb-4 mt-6 md:mt-8 tracking-tight leading-snug">
-                    {section.title}
-                  </h3>
-                  <p className="text-textPrimary leading-relaxed text-pretty">{section.content}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

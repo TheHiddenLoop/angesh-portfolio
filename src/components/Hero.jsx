@@ -49,11 +49,11 @@ export function Hero() {
               <img
                 src={me}
                 alt="Angesh Chauhan"
-                className="w-full h-full object-cover rounded-full border-4 border-primary shadow-lg transition-transform duration-500 hover:scale-105 hover:shadow-2xl relative z-10"
+                className="w-full h-full object-cover rounded-[58%_42%_37%_63%_/_42%_58%_63%_37%] border-4 border-primary shadow-lg transition-transform duration-500 hover:scale-105 hover:shadow-2xl relative z-10"
               />
 
-              <div className="image-decoration absolute inset-0 w-full h-full border-2 border-primary rounded-full opacity-30 animate-[rotate_20s_linear_infinite]">
-                <div className="absolute inset-5 border-2 border-secondary rounded-full animate-[rotate_15s_linear_infinite_reverse]"></div>
+              <div className="image-decoration absolute inset-0 w-full h-full border-2 border-primary rounded-[58%_42%_37%_63%_/_42%_58%_63%_37%] opacity-30 animate-[rotate_20s_linear_infinite]">
+                <div className="absolute inset-5 border-2 border-secondary rounded-[58%_42%_37%_63%_/_42%_58%_63%_37%] animate-[rotate_15s_linear_infinite_reverse]"></div>
               </div>
             </div>
           </div>
