@@ -9,6 +9,7 @@ import html from "../asset/html.jpeg"
 import react from "../asset/react.jpeg"
 import blog from "../asset/blog.png"
 import nexcent from "../asset/image.png"
+import gradient from "../asset/gradient.png"
 
 
 const CustomButton = ({
@@ -90,6 +91,15 @@ const Projects = () => {
             },
             {
                 id: 5,
+                title: "Gradient Generator App",
+                description:
+                    "A web application to create, preview, and copy custom CSS gradients with ease.",
+                image: gradient,
+                link: "https://opulenx.vercel.app/",
+            },
+
+            {
+                id: 6,
                 title: "Inventory Management System",
                 description:
                     "A simple inventory tracking app to manage stock and products.",
@@ -98,7 +108,7 @@ const Projects = () => {
                 link: "https://inventory-management-system-3kay.onrender.com",
             },
             {
-                id: 6,
+                id: 7,
                 title: "Bank Management System",
                 description:
                     "A system to manage customer accounts, transactions, and banking operations.",
@@ -106,6 +116,7 @@ const Projects = () => {
                     bank,
                 link: "https://github.com/TheHiddenLoop/bank-management-system",
             },
+
         ],
         webDesign: [
             {
