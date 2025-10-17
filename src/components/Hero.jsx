@@ -105,7 +105,7 @@ export const Hero = () => {
       </div>
 
       <div
-        className={`absolute bottom-6 left-1/2 transform -translate-x-1/2 transition-all duration-1000 delay-1000 ${
+        className={`absolute bottom-6 left-1/2 transform -translate-x-1/2 transition-all hidden md:block duration-1000 delay-1000 ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
         }`}
       >
