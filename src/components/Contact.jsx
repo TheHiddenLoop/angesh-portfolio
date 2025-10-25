@@ -45,7 +45,7 @@ const Contact = () => {
                 href="https://github.com/TheHiddenLoop"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center gap-2 p-4 sm:p-6 text-textPrimary hover:text-[#333] transition-transform duration-300 hover:-translate-y-2 glass-card"
+                className="flex flex-col items-center gap-2 p-4 sm:p-6 text-textPrimary hover:text-[#0077B5] transition-transform duration-300 hover:-translate-y-2 glass-card"
               >
                 <i className="fab fa-github text-xl sm:text-2xl mb-2"></i>
                 <span className="font-medium text-sm sm:text-base">GitHub</span>

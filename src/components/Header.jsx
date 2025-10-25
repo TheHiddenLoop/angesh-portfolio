@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import Button from "./Ul/Button";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -52,11 +51,9 @@ export function Header() {
             </ul>
           </nav>
 
-          <div className="flex items-center gap-4">
-            <Button /> 
-
+          <div className="md:hidden flex items-center gap-4">
             <button
-              className="md:hidden p-2 rounded-md text-textPrimary hover:bg-bgSecondary transition-colors"
+              className="p-2 rounded-md text-primary hover:bg-bgSecondary transition-colors"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}

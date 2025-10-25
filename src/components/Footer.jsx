@@ -1,4 +1,8 @@
+import { Moon, Sun } from "lucide-react";
+import { useDarkMode } from "../context/Theme";
+
 const Footer = () => {
+  const { darkMode, toggleDarkMode } = useDarkMode();
   return (
     <footer className="bg-bgSecondary border-t border-borderGlass py-8">
       <div className="max-w-[1200px] mx-auto px-6 sm:px-8 md:px-6">
@@ -32,6 +36,12 @@ const Footer = () => {
             >
               <i className="fab fa-twitter"></i>
             </a>
+            <span 
+              onClick={()=>toggleDarkMode(!darkMode)}
+              className="text-[#3B3B3B] text-xl flex cursor-pointer items-center justify-center w-10 h-10 rounded-full transition-transform duration-300 hover:text-primaryColor hover:bg-bgGlass hover:-translate-y-1"
+            >
+              {darkMode ? <Moon fill="#ffffff"/> : <Sun fill="#FF7043"/>}
+            </span>
           </div>
         </div>
       </div>

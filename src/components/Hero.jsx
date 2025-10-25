@@ -19,7 +19,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-bgPrimary font-poppins">
+    <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-bgPrimary font-poppins">
       <div className="absolute inset-0">
         <div className="absolute top-20 right-20 w-48 h-48 bg-bgSecondary rounded-full blur-2xl opacity-50" />
         <div className="absolute bottom-20 left-20 w-72 h-72 bg-bgSecondary rounded-full blur-2xl opacity-30" />
