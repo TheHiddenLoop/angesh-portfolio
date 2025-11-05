@@ -6,7 +6,7 @@ const Contact = () => {
     >
       <div className="max-w-[1200px] mx-auto z-10 w-full px-2 md:px-6">
         <h2 className="fade-in text-3xl sm:text-4xl md:text-[2.5rem] text-center font-bold mb-12 md:mb-[60px] text-textPrimary">
-          Get In Touch
+          Get In <span className="text-primary">Touch</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 md:items-start">
