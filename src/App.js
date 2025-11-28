@@ -5,6 +5,7 @@ import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import Projects from "./components/Project";
 import Skills from "./components/Skills";
+import { AiBot } from "./components/AiBot";
 
 export default function App() {
 
@@ -16,6 +17,7 @@ export default function App() {
       <Skills />
       <Projects />
       <Contact />
+      <AiBot />
       <Footer />
     </div>
   );
