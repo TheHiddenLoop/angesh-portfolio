@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Download, Eye, ArrowRight } from "lucide-react";
-import me from "../asset/me.jpg";
+import me from "../assets/me.jpg";
 
 export const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
